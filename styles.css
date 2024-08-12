@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  font-size: 16px;
+  color: #333333;
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+
+.box {
+  border: 3px solid #468585;
+  padding: 8px;
+  display: flex;
+}
+
+.title-name {
+  font-size: 30px;
+}
+
+.content {
+  width: 100%;
+  padding-left: 8px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.content p {
+  text-align: center;
+}
+
+.content .job-position {
+  font-size: 20px;
+}
+
+.side-bar {
+  background-color: #def9c4;
+  width: 40%;
+  height: 600px;
+  box-shadow: 2px 0px 8px rgba(11, 12, 0, 0.2);
+}
+
+.content-containner {
+  padding: 12px;
+  font-size: 14px;
+}
+
+.side-bar-title {
+  color: #468585;
+  font-size: 20px;
+  font-weight: 600;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.25);
+}
+
+.content-containner p {
+  margin-block: 6px;
+}
+
+@media (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+  .side-bar {
+    width: 35%;
+  }
+}
+
+@media (max-width: 576px) {
+  body {
+    font-size: 12px;
+  }
+  .side-bar {
+    width: 300px;
+  }
+  .content-containner {
+    font-size: 12px;
+  }
+}
